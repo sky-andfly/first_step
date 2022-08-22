@@ -8,30 +8,20 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function index(){
-        $posts = Post::where('id', 3)->first();
-        dd($posts);
-        return $posts;
+        $posts = Post::all();
+        return view("post.index", ['posts' => $posts]);
     }
     public function create(){
-        $data = [
-            [
-                "title" => 'нОВАЯ ЗАПИСЬ',
-                "content" => 'Контент новой записи',
-                "image" => 'image',
-                "likes" => 20,
-                "is_published" => 1,
-            ],
-            [
-                "title" => 'Вторая нОВАЯ ЗАПИСЬ',
-                "content" => 'Контент новой записи',
-                "image" => 'image',
-                "likes" => 20,
-                "is_published" => 1,
-            ],
-        ];
-        foreach ($data as $arr){
-            Post::create($arr);
-        }
+        return view('post.create');
+    }
+    public function store(){
+        $data = request()->validate([
+           'title' => 'string',
+           'content' => 'string',
+           'image' => 'string',
+        ]);
+        Post::create($data);
+        return redirect()->route('post.index');
     }
     public function update(){
         Post::find(4)->update(['title' => "updated"]);

@@ -1,0 +1,97 @@
+body{
+    background-color: #E9E9E9;
+    color: #212629;
+}
+h1{
+    color: #212629;
+}
+.post{
+    background: #E9E9E9;
+    position: relative;
+    padding: 10px 50px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 99px;
+    transition: 0.5s;
+
+}
+form{
+    background: #E9E9E9;
+    position: relative;
+    padding: 50px 50px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 99px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+input, textarea, button{
+    width: 100%;
+    border-radius: 99px;
+    padding: 15px 50px;
+    border: none;
+    outline: none;
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
+}
+textarea{
+    height: 150px;
+    padding-top: 50px;
+    resize: none;
+}
+button{
+    transition: .5s;
+}
+button:hover{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+}
+
+.post:hover{
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
+}
+.post h3{
+    font-weight: 100;
+    margin: 0;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+section{
+    padding-bottom: 50px;
+}
+.likes svg{
+    fill: #ff0059;
+}
+.date{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+.date svg{
+    fill: #0963ce;
+
+}
+nav{
+    padding: 20px;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+nav a{
+    display: flex;
+    color: #212629;
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 99px;
+    text-decoration: none;
+    background: #E9E9E9;
+    transition: .3s;
+}
+nav a:hover{
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
+}
