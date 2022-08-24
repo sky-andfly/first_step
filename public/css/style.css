@@ -15,7 +15,7 @@ h1{
     transition: 0.5s;
 
 }
-form{
+.add{
     background: #E9E9E9;
     position: relative;
     padding: 50px 50px;
@@ -26,7 +26,7 @@ form{
     flex-wrap: wrap;
     gap: 20px;
 }
-input, textarea, button{
+input, textarea, button, select{
     width: 100%;
     border-radius: 99px;
     padding: 15px 50px;
@@ -46,9 +46,9 @@ button:hover{
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
 }
 
-.post:hover{
-    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
-}
+/*.post:hover{*/
+/*    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);*/
+/*}*/
 .post h3{
     font-weight: 100;
     margin: 0;
@@ -93,5 +93,32 @@ nav a{
     transition: .3s;
 }
 nav a:hover{
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.post a{
+    display: flex;
+    color: #212629;
+    font-size: 12px;
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 99px;
+    text-decoration: none;
+    background: #E9E9E9;
+    transition: .3s;
+}
+.post    a:hover{
     box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.8), inset -6px -6px 5px rgba(255, 255, 255, 0.3), inset 1px 1px 3px rgba(0, 0, 0, 0.15), inset 6px 6px 5px rgba(0, 0, 0, 0.06);
 }

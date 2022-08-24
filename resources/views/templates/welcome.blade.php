@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="{{route('main')}}">Главная</a>
-            <a href="{{route('post.index')}}">Все посты</a>
-            <a href="{{route("post.create")}}">Добавить</a>
-        </div>
-    </nav>
-    @yield('content')
+<nav>
+    <div class="container">
+        <a href="{{route('main')}}">Главная</a>
+        <a href="{{route('post.index')}}">Все посты</a>
+        <a href="{{route("post.create")}}">Добавить</a>
+    </div>
+</nav>
+@yield('content')
 </body>
 </html>
