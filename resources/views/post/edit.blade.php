@@ -17,6 +17,15 @@
                             value="{{$category->id}}">{{$category->title}}</option>
                     @endforeach
                 </select>
+                <select multiple name="tags[]">
+                    @foreach($tags as $tag)
+                        <option
+                            @foreach($post->tags as $post_tag)
+                                {{ $post_tag->id === $tag->id ? ' selected' : ''}}
+                            @endforeach
+                            value="{{$tag->id}}">{{$tag->title}}</option>
+                    @endforeach
+                </select>
                 <button type="submit">Изменить</button>
             </form>
         </div>
